@@ -1,0 +1,15 @@
+/usr/bin/php /home/viralwar/public_html/xanda.sg/bin/magento cron:run
+
+
+
+
+
+
+
+
+
+
+
+/opt/alt/php56/usr/bin/php /home/viralwar/public_html/test/update/cron.php >> /home/viralwar/public_html/test/var/log/update.cron.log
+/opt/alt/php56/usr/bin/php /home/viralwar/public_html/test/bin/magento setup:cron:run >> /home/viralwar/public_html/test/var/log/setup.cron.log
+/opt/alt/php56/usr/bin/php /home/viralwar/public_html/test/bin/magento cron:run | grep -v "Ran jobs by schedule" >> /home/viralwar/public_html/test/var/log/magento.cron.log
